@@ -36,4 +36,19 @@ const renderHTML = (data) => {
     }
     getEle('danhSachUsers').innerHTML = content;
 }
+let menu1 = document.getElementById('header');
+let img1 = document.getElementById('img')
+window.onscroll = function(){
+    let menuScroll = window.scrollY;
+    console.log(menuScroll);
+    if(menuScroll > 400){
+        menu1.classList.add('header-hien');
+        document.querySelector('.header-hien').style.transform =  'translateY(0)';
+        document.querySelector('.img-fluid').style.display = 'none';
+    }
+    else{
+        menu1.classList.remove('header-hien');
+        document.querySelector('.img-fluid').style.display = 'block';
 
+    }
+}
