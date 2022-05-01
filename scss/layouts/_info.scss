@@ -11,8 +11,8 @@
 
         img{
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: $bd-1;
+            border-top-right-radius: $bd-1;
             transform: scale3d(1,1,1);
             transition: 0.3s all;
     
@@ -21,21 +21,20 @@
                 }
         }
         .info__content{
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             text-align: center;
             background-color: $color-white;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: $bd-1;
+            border-bottom-right-radius: $bd-1;
             p:nth-child(1){
                 color: $color-tim;
-                margin: 10px 0;
-                font-weight: 600;
-                font-size: 0.75rem;
+                margin: $mg-2 0;
+                font-weight: $fw-1;
+                font-size: $fs-4;
             }
     
             h3{
-                font-weight: 700;
+                font-weight: $fw-2;
             }
     
             p:nth-child(3){

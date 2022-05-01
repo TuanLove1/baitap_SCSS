@@ -1,40 +1,37 @@
 #find {
     background-image: url('./../../img/accent_bottom_wave_01.png');
-    background-position: center;
-    background-size: cover;
-    
-    padding: 40px;
+    @include backGround;
+    padding: $pd-2;
     .imgtop{
         img{
             width: 100%;
         }
     }
     .introduct{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         align-items: center;
         .intro{
             box-shadow: 0 30px 30px -10px #5a525278;
-            padding: 20px;
+            padding: $pd-1;
             border-radius: 10px;
             h1{
-                font-size: 43px;
-                font-weight: 700;
+                font-size: $fs-2;
+                font-weight: $fw-2;
                 margin-bottom: 50px;
             }
             .input1{
                 display: flex;
-                margin-bottom: 10px;
+                margin-bottom: $mg-2;
                 .border-1{
-                    border: 1px solid rgba(128, 128, 128, 0.363);
+                    border: $border;
                     border-radius: 35px;
-                    margin-right: 10px;
+                    margin-right: $mg-2;
                     padding: 5px 10px 5px 5px;
                 }
             }
             i{
-                margin-right: 5px;
-                margin-left: 5px;
+                margin-right: $mg-1;
+                margin-left: $mg-1;
                 color: $color-tim;
             }
             .input1-1 {
@@ -44,12 +41,7 @@
             }
         
             .input2{
-                border: 1px solid rgba(128, 128, 128, 0.363);
-                border-radius: 35px;
-                margin-right: 10px;
-                padding: 5px 10px 5px 5px;
-                width: 343px;
-                margin-bottom: 10px;
+                @include inputall;
         
                 #cars{
                     border: none;
@@ -60,14 +52,8 @@
             }
             
             .input3{
-                border: 1px solid rgba(128, 128, 128, 0.363);
-                border-radius: 35px;
-                margin-right: 10px;
-                padding: 5px 10px 5px 5px;
-                width: 343px;
+                @include inputall;
                 display: flex;
-                margin-bottom: 10px;
-
                 i{
                     line-height: 34px;
                 }
@@ -84,7 +70,7 @@
                 // color: white;
                 border-radius: 60px;
                 padding: 20px 50px;
-                font-weight: 600;
+                font-weight: $fw-1;
                 margin: 40px 0 50px 0;
                 line-height: 10px;
                 border: none;

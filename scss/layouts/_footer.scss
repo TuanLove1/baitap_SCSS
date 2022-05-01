@@ -3,11 +3,11 @@ footer {
     background-image: url('./../../img/footer_background.jpg');
     background-position: center;
     background-size: cover;
-    padding: 40px;
+    padding: $pd-2;
 
     .contactus {
         h3 {
-            font-weight: 700;
+            font-weight: $fw-2;
             margin-bottom: 30px;
         }
 
@@ -18,7 +18,7 @@ footer {
                 margin-bottom: 15px;
 
                 i {
-                    margin-right: 10px;
+                    margin-right: $mg-2;
                 }
 
                 .icon {
@@ -78,7 +78,7 @@ footer {
                 transition: 0.5s all;
                 background-color: $color-white;
                 color: black;
-                font-weight: 600;
+                font-weight: $fw-1;
                 box-shadow: 0 0 0 3em $color-white inset;
 
                 &:hover {

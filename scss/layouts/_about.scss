@@ -5,18 +5,17 @@
     margin-top: -100px;
 
     .about__left{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         justify-content: center;
 
         p{
             color: $color-tim;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: $fs-1;
+            font-weight: $fw-1;
         }
         h1{
-            font-size: 60px;
-            font-weight: 700;
+            font-size: $fs-3;
+            font-weight: $fw-2;
         }
     }
 

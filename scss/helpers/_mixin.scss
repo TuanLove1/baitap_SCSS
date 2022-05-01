@@ -1,0 +1,26 @@
+@mixin headerMenu($position,$width,$background-color,$z-index,$height) {
+    position: $position;
+    width: $width;
+    background-color: $background-color;
+    z-index: $z-index;
+    height: $height;
+}
+
+@mixin backGround{
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin inputall {
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    border-radius: 35px;
+    margin-right: $mg-2;
+    padding: 5px 10px 5px 5px;
+    width: 343px;
+    margin-bottom: $mg-2;
+}
